@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#section-1{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    width: 90%;
+    height: 70vh;
+    background-color: #FEEA77;
+    border-radius: 50px;
+    align-content: center;
+}
+
+.teks-kiri{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.teks-kiri h1{
+    font-family: 'poppins', sans-serif;
+    font-size: 70px;
+}
+
+.teks-kiri p{
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.teks-kiri button{
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: #FD785B;
+    transition: .5s;
+    box-shadow: 0 2px 5px 0 rgb(82, 80, 80);
+}
+
+.teks-kiri button:hover{
+    background-color: #be3f23;
+}
+
+
+#section-2 {
+    margin: 200px 100px;
+    height: 100vh;
+}
+
+.header-menu{
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+
+.gambar-card{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-auto-flow: column;
+    gap: 30px;
+    justify-content: center;
+}
+.isi-gambar{
+    position: relative;
+    margin: auto;
+
+}
+.isi-gambar img{
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px 2px rgb(167, 166, 166);
+    transition: .5s;
+    transform: scale(1);
+}
+
+.isi-gambar:hover img {
+    transform: scale(1.1);
+    border-radius: 20px;
+    box-shadow: 0 5px 5px 2px rgb(167, 166, 166);
+}
+
+#section-3{
+   margin-top: 450px;
+    width: 100%;
+    height: 100vh;
+    background-color: #FD785B;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+
+
+.gambar-kiri img{
+    width: 600px;
+}
+
+.teks-kanan h1{
+    font-family: 'poppins', sans-serif;
+    font-size: 50px;
+    color: #fff;
+}
+
+.teks-kanan p{
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+.teks-kanan button{
+    margin-top: 20px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FD785B;
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0 2px 5px 0 #8d2d18;
+}
+
+
+
+.teks-kanan button:hover{
+    background-color: #c2300f;
+    color: #fff;
+}
+
+
+#konten-3{
+    position: absolute;
+    top: 2530px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card{
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0 2px 15px 0 rgb(82, 80, 80);
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.card h1 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card button{
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    background-color:  #FD785B;
+    box-shadow: 0 2px 5px 0 hsl(322, 35%, 31%);
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    transition: .5s;
+}
+
+.card button:hover{
+    background-color: hsl(322, 91%, 49%);
+    box-shadow: 0 2px 5px 0 hsl(323, 40%, 54%);
+}
+
+
+footer{
+    padding-top: 200px;
+    padding-left: 125px;
+    padding-right: 125px;
+    width: 100%;
+    height: 600px;
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+}
+
+.footer-grid{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 40px;
+}
+
+.footer-1 img{
+    height: 150px;
+}
+
+
+
+
+.teks-icon{
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.teks-icon p{
+    font-family: 'open sans', sans-serif;
+}
+
+.footer-2, .footer-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'open sans', sans-serif;
+}
+
+.footer-4{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+.copyright{
+    position: absolute;
+    margin-top: 70px;
+    justify-content: flex-end;
+    right: 220px;
+}
+
+
+.bi {
+    cursor: pointer;
+    transition: .5s;
+}
+
+.bi:hover{
+    color: hsl(322, 100%, 66%);
+}
+
+.footer-2 a, .footer-3 a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    transition: .5s;
+}
+
+.footer-2 a:hover, .footer-3 a:hover{
+    color: hsl(322, 100%, 66%);
+}

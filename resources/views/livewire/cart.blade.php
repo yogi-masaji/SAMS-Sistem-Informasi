@@ -26,8 +26,8 @@
                         </div>
                         @empty
                         <div class="col-sm-12 mt-5" style="display:table-cell; vertical-align:middle; text-align:center;">
-                            <h1 class="text-center font-weight-bold text-primary">barang yang dicari ga ada</h1>
-                            <img src="{{asset('/images/marah.jpg')}}" class="center" style="width: 400px; height:400px" alt="">
+                            <h1 class="text-center font-weight-bold text-primary">menu yang dicari tidak tersedia</h1>
+                            {{-- <img src="{{asset('/images/marah.jpg')}}" class="center" style="width: 400px; height:400px" alt=""> --}}
 
                         </div>
                     @endforelse
@@ -95,6 +95,7 @@
                     <h4 class="font-weight-bold">Cart Summary</h4>
                     <h5 class="font-weight-bold">Sub Total : Rp {{number_format($summary['sub_total'],2,',','.')}}</h5>
                     <h5 class="font-weight-bold">Tax : Rp {{number_format($summary['pajak'],2,',','.')}}</h5>
+                    <h4 class="font-weight-bold">Total : Rp {{number_format($summary['total'],2,',','.')}}</h4>
 
                     <div class="row">
                         <div class="col-sm-6">
@@ -116,12 +117,12 @@
 
                         <div>
                             <label>Payment</label>
-                            <h1 id="paymenttext">Rp. 0</h1>
+                            <h1 id="paymenttext" wire:ignore>Rp. 0</h1>
                         </div>
 
                         <div>
                             <label>Kembalian</label>
-                            <h1 id="kembalian">Rp. 0</h1>
+                            <h1 id="kembalian" wire:ignore>Rp. 0</h1>
                         </div>
 
                         <div class="mt-4">
